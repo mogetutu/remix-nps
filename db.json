@@ -1,80 +1,82 @@
 {
-   "title":"Rate us",
-   "questions":[
-      {
-         "type":"nps",
-         "id":100,
-         "next":101,
-         "title":"How likely are you to recommend our service?",
-         "numeric":{
-            "required":true,
-            "step":1,
-            "min":{
-               "value":0,
-               "text":"Worst"
-            },
-            "max":{
-               "value":10,
-               "text":"Best"
-            }
-         }
-      },
-      {
-         "type":"radio",
-         "id":101,
-         "next":102,
-         "title":"How you posted an ad in the past 3 months?",
-         "radio":{
-            "required":true,
-            "options":[
-               {
-                  "id":10,
-                  "title":"yes"
-               },
-               {
-                  "id":11,
-                  "title":"no"
-               }
-            ]
-         }
-      },
-      {
-         "type":"range",
-         "id":102,
-         "next":103,
-         "title":"How would you rate the new ad posting experience?",
-         "range":{
-            "required":true,
-            "step":1,
-            "min":{
-               "value":0,
-               "text":"Worst"
-            },
-            "max":{
-               "value":5,
-               "text":"Best"
-            }
-         }
-      },
-      {
-         "type":"email",
-         "id":103,
-         "next":104,
-         "title":"Share you email address for new products information and updates",
-         "email":{
-            "required":false,
-            "text":"Email"
-         }
-      },
-      {
-         "type":"text",
-         "id":104,
-         "next":null,
-         "title":"Thank you",
-         "text":{
-            "required":true,
-            "text":"Thank you"
-         }
-      }
-   ]
-}
+    "survey_id": 1,
+    "enabled": true,
+    "title":"Rate us",
+    "questions":[
+       {
+          "id":100,
+          "type":"nps",
+          "next":101,
+          "title":"How likely are you to recommend our service?",
+          "numeric":{
+             "required":true,
+             "step":1,
+             "min":{
+                "value":0,
+                "text":"Worst"
+             },
+             "max":{
+                "value":10,
+                "text":"Best"
+             }
+          }
+       },
+       {
+          "id":101,
+          "type":"radio",
+          "next":102,
+          "title":"How you posted an ad in the past 3 months?",
+          "radio":{
+             "required":true,
+             "options":[
+                {
+                   "id":10,
+                   "title":"yes"
+                },
+                {
+                   "id":11,
+                   "title":"no"
+                }
+             ]
+          }
+       },
+       {
+          "id":102,
+          "type":"range",
+          "next":103,
+          "title":"How would you rate the new ad posting experience?",
+          "range":{
+             "required":true,
+             "step":1,
+             "min":{
+                "value":0,
+                "text":"Worst"
+             },
+             "max":{
+                "value":5,
+                "text":"Best"
+             }
+          }
+       },
+       {
+          "id":103,
+          "type":"email",
+          "next":104,
+          "title":"Share you email address for new products information and updates",
+          "email":{
+             "required":false,
+             "text":"Email"
+          }
+       },
+       {
+          "id":104,
+          "type":"text",
+          "next":null,
+          "title":"Thank you",
+          "text":{
+             "required":true,
+             "text":"Thank you"
+          }
+       }
+    ]
+ }
