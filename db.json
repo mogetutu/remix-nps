@@ -12,7 +12,7 @@
       "id": 100,
       "type": "nps",
       "next": 101,
-      "title": "How likely are you to recommend our service?",
+      "title": "How likely are you to recommend our services to friends and family?",
       "numeric": {
         "required": true,
         "step": 1,
@@ -31,7 +31,7 @@
       "id": 101,
       "type": "radio",
       "next": 102,
-      "title": "How you posted an ad in the past 3 months?",
+      "title": "Have you sold an item listed on our platform in the last 3 months?",
       "radio": {
         "required": true,
         "options": [
@@ -51,13 +51,13 @@
       "id": 102,
       "type": "range",
       "next": 103,
-      "title": "How would you rate the new ad posting experience?",
+      "title": "How would you rate your experience when posting an ad on our platform?",
       "range": {
         "required": true,
         "step": 1,
         "min": {
           "value": 0,
-          "text": "Worst"
+          "text": "Not Good"
         },
         "max": {
           "value": 5,
@@ -68,9 +68,20 @@
     {
       "surveyId": 1,
       "id": 103,
-      "type": "email",
+      "type": "text",
       "next": 104,
-      "title": "Share you email address for new products information and updates",
+      "title": "Would you like to leave us some feedback about your post ad experience?",
+      "text": {
+        "required": true,
+        "maxLength": 500
+      }
+    },
+    {
+      "surveyId": 1,
+      "id": 104,
+      "type": "email",
+      "next": 105,
+      "title": "Share your email address for new product updates.",
       "email": {
         "required": false,
         "text": "Email"
@@ -78,10 +89,10 @@
     },
     {
       "surveyId": 1,
-      "id": 104,
+      "id": 105,
       "type": "final",
       "next": null,
-      "title": "Thank you",
+      "title": "Thank you for participating in our survey, your feedback us important to us.",
       "final": {
         "required": true,
         "text": "Thank you"
