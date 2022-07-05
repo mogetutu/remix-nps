@@ -1,9 +1,14 @@
 {
-  "survey_id": 1,
-  "enabled": true,
-  "title": "Rate us",
+  "surveys": [
+    {
+      "id": 1,
+      "enabled": true,
+      "title": "Rate us"
+    }
+  ],
   "questions": [
     {
+      "surveyId": 1,
       "id": 100,
       "type": "nps",
       "next": 101,
@@ -22,6 +27,7 @@
       }
     },
     {
+      "surveyId": 1,
       "id": 101,
       "type": "radio",
       "next": 102,
@@ -41,6 +47,7 @@
       }
     },
     {
+      "surveyId": 1,
       "id": 102,
       "type": "range",
       "next": 103,
@@ -59,6 +66,7 @@
       }
     },
     {
+      "surveyId": 1,
       "id": 103,
       "type": "email",
       "next": 104,
@@ -69,11 +77,12 @@
       }
     },
     {
+      "surveyId": 1,
       "id": 104,
-      "type": "text",
+      "type": "final",
       "next": null,
       "title": "Thank you",
-      "text": {
+      "final": {
         "required": true,
         "text": "Thank you"
       }
