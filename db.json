@@ -9,6 +9,16 @@
   "questions": [
     {
       "surveyId": 1,
+      "id": 99,
+      "type": "prompt",
+      "next": 100,
+      "title": "Do you have time for a quick survey?",
+      "prompt": {
+        "required": true
+      }
+    },
+    {
+      "surveyId": 1,
       "id": 100,
       "type": "nps",
       "next": 101,
