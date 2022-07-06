@@ -20,10 +20,10 @@
     {
       "surveyId": 1,
       "id": 100,
-      "type": "nps",
+      "type": "range",
       "next": 101,
       "title": "How likely are you to recommend our services to friends and family?",
-      "numeric": {
+      "range": {
         "required": true,
         "step": 1,
         "min": {
